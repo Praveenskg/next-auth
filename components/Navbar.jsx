@@ -38,7 +38,7 @@ const Navbar = () => {
           {user && (
             <>
               <p className="mx-2">Welcome </p>
-              <Image
+              <img
                 className="object-cover w-8 h-8 rounded-full mr-2"
                 src={user.image}
                 alt="Avatar image"
