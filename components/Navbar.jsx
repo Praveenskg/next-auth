@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "@/context/AuthContext";
@@ -37,7 +38,7 @@ const Navbar = () => {
           {user && (
             <>
               <p className="mx-2">Welcome </p>
-              <img
+              <Image
                 className="object-cover w-8 h-8 rounded-full mr-2"
                 src={user.image}
                 alt="Avatar image"

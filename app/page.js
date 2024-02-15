@@ -1,5 +1,6 @@
 "use client";
 import { useAuth } from "@/context/AuthContext";
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 const HomePage = () => {
@@ -13,7 +14,7 @@ const HomePage = () => {
     <>
       <div class="flex justify-center items-center h-screen">
         <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-600">
-          <img
+          <Image
             class="object-cover object-center w-full h-56"
             src={user.image}
             alt="avatar"
